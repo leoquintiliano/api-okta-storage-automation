@@ -77,7 +77,7 @@ public class VeiculoService {
                 Objects.nonNull(veiculo.getCombustivel()) && Objects.nonNull(veiculo.getSiglaCombustivel()) && Objects.nonNull(veiculo.getTipoVeiculo())
                 && Objects.nonNull(veiculo.getAnoModelo())
                 &&
-                !veiculo.getNome().isBlank() && !veiculo.getMarca().isBlank() && !veiculo.getModelo().isBlank() && veiculo.getValor() != 0L &&
+                !veiculo.getNome().isEmpty() && !veiculo.getMarca().isEmpty() && !veiculo.getModelo().isEmpty() && veiculo.getValor() != 0L &&
                 !veiculo.getCombustivel().isEmpty() && !veiculo.getSiglaCombustivel().isEmpty() && !veiculo.getAnoModelo().isEmpty();
     }
 

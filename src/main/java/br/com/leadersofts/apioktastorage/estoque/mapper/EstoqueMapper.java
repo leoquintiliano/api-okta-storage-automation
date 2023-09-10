@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
@@ -24,7 +25,7 @@ public class EstoqueMapper {
 
         if(Objects.nonNull(estoque)) {
             return EstoqueDTO.builder()
-                    .veiculos(List.of(veiculoMapper.getVeiculoDTO(this.getVeiculos(estoque).get(0))))
+                    .veiculos(Arrays.asList(veiculoMapper.getVeiculoDTO(this.getVeiculos(estoque).get(0))))
                     .diasNoEstoque( !Objects.isNull(estoque.getId()) ? estoque.getId() : 0L)
                     .dataEntrada(!Objects.isNull(estoque.getDataEntrada()) ? estoque.getDataEntrada() : LocalDate.now())
                     .dono(!Objects.isNull(estoque.getDono()) ? estoque.getDono() : "")
@@ -42,7 +43,7 @@ public class EstoqueMapper {
     public Estoque getEstoque(EstoqueDTO estoqueDTO) {
         if(Objects.nonNull(estoqueDTO)) {
             return Estoque.builder()
-                    .veiculos( List.of( veiculoMapper.getVeiculo(estoqueDTO.getVeiculos().get(0))) )
+                    .veiculos( Arrays.asList( veiculoMapper.getVeiculo(estoqueDTO.getVeiculos().get(0))) )
                     .diasNoEstoque( !Objects.isNull(estoqueDTO.getId()) ? estoqueDTO.getId() : 0L)
                     .dataEntrada(!Objects.isNull(estoqueDTO.getDataEntrada()) ? estoqueDTO.getDataEntrada() : LocalDate.now())
                     .dono(!Objects.isNull(estoqueDTO.getDono()) ? estoqueDTO.getDono() : "")
