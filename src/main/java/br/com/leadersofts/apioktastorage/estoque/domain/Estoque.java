@@ -2,7 +2,7 @@ package br.com.leadersofts.apioktastorage.estoque.domain;
 
 import br.com.leadersofts.apioktastorage.observacao.domain.Observacao;
 import br.com.leadersofts.apioktastorage.veiculo.domain.Veiculo;
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

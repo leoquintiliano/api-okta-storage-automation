@@ -6,6 +6,7 @@ import br.com.leadersofts.apioktastorage.anoveiculo.repository.AnoVeiculoReposit
 import br.com.leadersofts.apioktastorage.client.MotoFipeClient;
 import br.com.leadersofts.apioktastorage.client.VeiculoFipeClient;
 import br.com.leadersofts.apioktastorage.enums.TipoVeiculoEnum;
+import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

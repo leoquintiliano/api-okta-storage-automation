@@ -12,6 +12,7 @@ import br.com.leadersofts.apioktastorage.estoque.dto.EstoqueDTO;
 import br.com.leadersofts.apioktastorage.estoque.service.EstoqueService;
 import br.com.leadersofts.apioktastorage.observacao.domain.Observacao;
 import br.com.leadersofts.apioktastorage.veiculo.domain.Veiculo;
+import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

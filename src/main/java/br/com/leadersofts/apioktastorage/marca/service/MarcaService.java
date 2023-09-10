@@ -7,6 +7,7 @@ import br.com.leadersofts.apioktastorage.marca.dto.MarcaDTO;
 import br.com.leadersofts.apioktastorage.marca.mapper.MarcaMapper;
 import br.com.leadersofts.apioktastorage.marca.pojo.Marca;
 import br.com.leadersofts.apioktastorage.marca.repository.MarcaRepository;
+import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -3,6 +3,7 @@ package br.com.leadersofts.apioktastorage.observacao.resource;
 import br.com.leadersofts.apioktastorage.observacao.dto.ObservacaoDTO;
 import br.com.leadersofts.apioktastorage.observacao.mapper.ObservacaoMapper;
 import br.com.leadersofts.apioktastorage.observacao.service.ObservacaoService;
+import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

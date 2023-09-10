@@ -2,7 +2,9 @@ package br.com.leadersofts.apioktastorage.veiculo.resource;
 
 import br.com.leadersofts.apioktastorage.veiculo.dto.VeiculoDTO;
 import br.com.leadersofts.apioktastorage.veiculo.service.VeiculoService;
-import jakarta.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpServletResponse;
+
+import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

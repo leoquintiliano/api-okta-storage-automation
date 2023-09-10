@@ -3,6 +3,7 @@ package br.com.leadersofts.apioktastorage.marca.resource;
 import br.com.leadersofts.apioktastorage.marca.dto.MarcaDTO;
 import br.com.leadersofts.apioktastorage.marca.service.MarcaService;
 import br.com.leadersofts.apioktastorage.modelo.service.ModeloService;
+import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

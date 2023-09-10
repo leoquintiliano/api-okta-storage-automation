@@ -1,6 +1,6 @@
 package br.com.leadersofts.apioktastorage.observacao.domain;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
