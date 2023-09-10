@@ -2,6 +2,7 @@ package br.com.leadersofts.apioktastorage.veiculo.resource;
 
 import br.com.leadersofts.apioktastorage.veiculo.dto.VeiculoDTO;
 import br.com.leadersofts.apioktastorage.veiculo.service.VeiculoService;
+import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,14 +13,18 @@ import java.util.Objects;
 
 @RestController
 @RequestMapping("/veiculo")
-@CrossOrigin
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class VeiculoResource {
 
     @Autowired
     private VeiculoService veiculoService;
 
     @GetMapping("/list")
-    private ResponseEntity<List<VeiculoDTO>> listVeiculos() {
+    @CrossOrigin(origins = "https://api-oka-storage-7b95436dead4.herokuapp.com")
+    private ResponseEntity<List<VeiculoDTO>> listVeiculos(HttpServletResponse response) {
+        response.addHeader("Access-Control-Allow-Origin","*");
+        response.addHeader("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE, OPTIONS, HEAD, TRACE, CONNECT");
+        response.addHeader("Access-Control-Allow-Headers", "origin, content-type, accept, x-requested-with");
         var veiculosResponse = this.veiculoService.findAll();
         var veiculos = this.veiculoService.getVeiculos(veiculosResponse);
         return ResponseEntity.ok(veiculos);
