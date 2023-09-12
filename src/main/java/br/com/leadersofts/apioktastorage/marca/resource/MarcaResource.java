@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/marca")
-@CrossOrigin
+//@CrossOrigin
 public class MarcaResource {
 
     @Autowired

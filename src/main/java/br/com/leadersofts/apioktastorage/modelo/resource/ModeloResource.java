@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/modelo")
-@CrossOrigin
+//@CrossOrigin
 public class ModeloResource {
 
     @Autowired

@@ -19,26 +19,24 @@ public class ApiOktaStorageApplication {
 				public void addCorsMappings(CorsRegistry registry) {
 					registry.addMapping("/**")
 							.allowedOrigins("*")
-//							.allowedOrigins("http://localhost:3000")
-//							.allowedOrigins("http://localhost:4200")
-//							.allowedOrigins("https://app-okta-storage-automation-50c87ba42d16.herokuapp.com")
 							.allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD", "TRACE", "CONNECT");
 
-					registry.addMapping("/veiculo/**")
-							.allowedOrigins("*")
-//							.allowedOrigins("http://localhost:3000")
-//							.allowedOrigins("http://localhost:4200")
-//							.allowedOrigins("https://app-okta-storage-automation-50c87ba42d16.herokuapp.com/")
-							.allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD", "TRACE", "CONNECT");
+//					registry.addMapping("/veiculo/**")
+//							.allowedOrigins("*")
+////							.allowedOrigins("http://localhost:3000")
+////							.allowedOrigins("http://localhost:4200")
+////							.allowedOrigins("https://app-okta-storage-automation-50c87ba42d16.herokuapp.com/")
+////							.allowedOrigins("https://api-okta-storage-1074546022c0.herokuapp.com")
+//							.allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD", "TRACE", "CONNECT");
 
-					registry.addMapping("/observacao/**")
-							.allowedOrigins("*")
-							.allowedMethods("GET","POST","PUT","DELETE");
-
-					registry.addMapping("/estoque/**")
-							.allowedOrigins("*")
-							.allowedMethods("GET","POST", "PUT", "OPTIONS", "HEAD", "TRACE", "CONNECT");
-//							.allowedHeaders("");
+//					registry.addMapping("/observacao/**")
+//							.allowedOrigins("*")
+//							.allowedMethods("GET","POST","PUT","DELETE");
+//
+//					registry.addMapping("/estoque/**")
+//							.allowedOrigins("*")
+//							.allowedMethods("GET","POST", "PUT", "OPTIONS", "HEAD", "TRACE", "CONNECT");
+////							.allowedHeaders("");
 
 			}
 

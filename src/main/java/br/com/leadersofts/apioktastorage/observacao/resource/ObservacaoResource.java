@@ -14,7 +14,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/observacao")
-@CrossOrigin
+//@CrossOrigin
 public class ObservacaoResource {
 
     @Autowired
@@ -39,7 +39,7 @@ public class ObservacaoResource {
 
     @PostMapping("/save")
     @ResponseStatus(HttpStatus.OK)
-    @CrossOrigin
+//    @CrossOrigin
     public void save(@RequestBody ObservacaoDTO observacaoDTO) {
         this.observacaoService.save(observacaoDTO);
     }

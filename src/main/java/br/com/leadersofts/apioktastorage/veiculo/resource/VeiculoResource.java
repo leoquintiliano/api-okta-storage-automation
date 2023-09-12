@@ -15,7 +15,7 @@ import java.util.Objects;
 
 @RestController
 @RequestMapping("/veiculo")
-@CrossOrigin(origins = "*", allowedHeaders = "*")
+//@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class VeiculoResource {
 
     @Autowired
