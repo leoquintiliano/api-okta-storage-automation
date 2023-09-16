@@ -7,7 +7,7 @@ import br.com.leadersofts.apioktastorage.veiculo.domain.Veiculo;
 import br.com.leadersofts.apioktastorage.veiculo.dto.VeiculoDTO;
 import br.com.leadersofts.apioktastorage.veiculo.mapper.VeiculoMapper;
 import br.com.leadersofts.apioktastorage.veiculo.repository.VeiculoRepository;
-import lombok.var;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

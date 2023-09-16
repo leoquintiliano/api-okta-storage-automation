@@ -4,7 +4,7 @@ import br.com.leadersofts.apioktastorage.estoque.domain.Estoque;
 import br.com.leadersofts.apioktastorage.estoque.dto.EstoqueDTO;
 import br.com.leadersofts.apioktastorage.estoque.mapper.EstoqueMapper;
 import br.com.leadersofts.apioktastorage.estoque.repository.EstoqueRepository;
-import lombok.var;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

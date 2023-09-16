@@ -7,7 +7,7 @@ import br.com.leadersofts.apioktastorage.marca.dto.MarcaDTO;
 import br.com.leadersofts.apioktastorage.marca.mapper.MarcaMapper;
 import br.com.leadersofts.apioktastorage.marca.pojo.Marca;
 import br.com.leadersofts.apioktastorage.marca.repository.MarcaRepository;
-import lombok.var;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -81,8 +81,6 @@ public class MarcaService {
         this.veiculoFipeClient.initValues();
         return this.veiculoFipeClient.getMarcasVeiculos();
 
-//        this.veiculoFipeClient.initValues();
-//        return this.fipeClient.getMarcasVeiculos();
     }
 
     public List<br.com.leadersofts.apioktastorage.marca.domain.Marca> fetchBrandsFromFipeToModelObject(List<Marca> marcas) {

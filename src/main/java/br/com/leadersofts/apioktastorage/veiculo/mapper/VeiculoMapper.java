@@ -3,7 +3,6 @@ package br.com.leadersofts.apioktastorage.veiculo.mapper;
 import br.com.leadersofts.apioktastorage.veiculo.domain.Veiculo;
 import br.com.leadersofts.apioktastorage.veiculo.dto.VeiculoDTO;
 
-import lombok.var;
 import org.springframework.stereotype.Component;
 
 import java.util.Objects;

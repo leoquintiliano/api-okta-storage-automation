@@ -8,7 +8,7 @@ import br.com.leadersofts.apioktastorage.modelo.domain.Modelo;
 import br.com.leadersofts.apioktastorage.modelo.dto.ModeloDTO;
 import br.com.leadersofts.apioktastorage.modelo.mapper.ModeloMapper;
 import br.com.leadersofts.apioktastorage.modelo.repository.ModeloRepository;
-import lombok.var;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

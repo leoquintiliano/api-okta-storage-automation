@@ -3,7 +3,6 @@ package br.com.leadersofts.apioktastorage.observacao.resource;
 import br.com.leadersofts.apioktastorage.observacao.dto.ObservacaoDTO;
 import br.com.leadersofts.apioktastorage.observacao.mapper.ObservacaoMapper;
 import br.com.leadersofts.apioktastorage.observacao.service.ObservacaoService;
-import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,7 +13,6 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/observacao")
-//@CrossOrigin
 public class ObservacaoResource {
 
     @Autowired
@@ -39,7 +37,6 @@ public class ObservacaoResource {
 
     @PostMapping("/save")
     @ResponseStatus(HttpStatus.OK)
-//    @CrossOrigin
     public void save(@RequestBody ObservacaoDTO observacaoDTO) {
         this.observacaoService.save(observacaoDTO);
     }

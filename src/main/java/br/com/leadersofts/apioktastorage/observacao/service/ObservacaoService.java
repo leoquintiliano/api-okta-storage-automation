@@ -4,7 +4,6 @@ import br.com.leadersofts.apioktastorage.observacao.domain.Observacao;
 import br.com.leadersofts.apioktastorage.observacao.dto.ObservacaoDTO;
 import br.com.leadersofts.apioktastorage.observacao.mapper.ObservacaoMapper;
 import br.com.leadersofts.apioktastorage.observacao.repository.ObservacaoRepository;
-import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

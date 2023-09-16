@@ -2,7 +2,6 @@ package br.com.leadersofts.apioktastorage.modelo.resource;
 import br.com.leadersofts.apioktastorage.modelo.dto.ModeloDTO;
 import br.com.leadersofts.apioktastorage.modelo.service.ModeloService;
 
-import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,7 +12,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/modelo")
-//@CrossOrigin
 public class ModeloResource {
 
     @Autowired

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/ano-veiculo")
-@CrossOrigin
+//@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class AnoVeiculoResource {
 
     @Autowired

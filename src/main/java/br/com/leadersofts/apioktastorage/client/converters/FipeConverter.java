@@ -5,7 +5,6 @@ import br.com.leadersofts.apioktastorage.marca.pojo.Marca;
 import br.com.leadersofts.apioktastorage.modelo.pojo.Modelo;
 import br.com.leadersofts.apioktastorage.veiculo.pojo.Veiculo;
 
-import lombok.var;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 

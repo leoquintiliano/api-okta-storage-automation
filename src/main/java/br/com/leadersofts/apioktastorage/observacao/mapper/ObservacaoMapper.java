@@ -2,7 +2,7 @@ package br.com.leadersofts.apioktastorage.observacao.mapper;
 
 import br.com.leadersofts.apioktastorage.observacao.domain.Observacao;
 import br.com.leadersofts.apioktastorage.observacao.dto.ObservacaoDTO;
-import lombok.var;
+
 import org.springframework.stereotype.Component;
 
 import java.util.List;
